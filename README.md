@@ -4,14 +4,10 @@ This project is an end-to-end cloud-based data pipeline for retail sales analyti
 
 ## Architecture Summary
 The pipeline follows the Bronze–Silver–Gold architecture pattern:
-
-Bronze Layer: Raw data is ingested into Azure Data Lake Gen2 using Azure Data Factory.
-
-Silver Layer: Azure Databricks transforms raw data into cleaned, structured formats.
-
-Gold Layer: Synapse SQL serverless reads the cleaned data and exposes it as SQL views and tables.
-
-Reporting: Power BI visualizes the gold layer data for business insights.
+- Bronze Layer: Raw data is ingested into Azure Data Lake Gen2 using Azure Data Factory.
+- Silver Layer: Azure Databricks transforms raw data into cleaned, structured formats.
+- Gold Layer: Synapse SQL serverless reads the cleaned data and exposes it as SQL views and tables.
+- Reporting: Power BI visualizes the gold layer data for business insights.
 
 ## Technologies Used
 - Azure Data Factory
